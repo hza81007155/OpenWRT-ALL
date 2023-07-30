@@ -85,7 +85,6 @@ jobs:
           cd ./owrt
 
           ./scripts/feeds update -a
-          ./scripts/feeds install -a
 
       - name: Custom Scripts
         run: |
@@ -100,6 +99,8 @@ jobs:
           cd ./owrt
 
           rm -rf ./tmp* ./.config*
+          ./scripts/feeds install -a
+          
           cat $GITHUB_WORKSPACE/Config/$OWRT_TARGET.txt $GITHUB_WORKSPACE/Config/General.txt >> .config
 
           $GITHUB_WORKSPACE/Scripts/Extras.sh
