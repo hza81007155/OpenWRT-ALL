@@ -12,7 +12,10 @@ git clone --depth=1 --single-branch https://github.com/linkease/nas-packages.git
 git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luci.git
 
 # packages
-# git clone --depth=1 --single-branch https://github.com/kiddin9/openwrt-packages.git
+#git clone --depth=1 --single-branch https://github.com/kiddin9/openwrt-packages.git kiddin9
+
+# adguardHome
+git clone --depth=1 --single-branch https://github.com/rufengsuixing/luci-app-adguardhome.git
 
 #Open Clash
 git clone --depth=1 --single-branch --branch "dev" https://github.com/vernesong/OpenClash.git
