@@ -17,6 +17,9 @@ git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luc
 # adguardHome
 git clone --depth=1 --single-branch https://github.com/rufengsuixing/luci-app-adguardhome.git
 
+# lucky
+git clone --depth=1 --single-branch https://github.com/gdy666/luci-app-lucky.git
+
 #Open Clash
 git clone --depth=1 --single-branch --branch "dev" https://github.com/vernesong/OpenClash.git
 #Pass Wall
