@@ -150,7 +150,7 @@ jobs:
 
       - name: Machine Information
         run: |
-          cd ./wrt/
+          cd ./owrt/
 
           echo "======================="
           lscpu | grep -E "name|Core|Thread"
