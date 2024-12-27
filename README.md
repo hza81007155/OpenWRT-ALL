@@ -9,7 +9,6 @@ https://github.com/immortalwrt/immortalwrt
 
 # 固件简要说明：
 
-固件每天早上4点自动编译。
 
 固件信息里的时间为编译开始的时间，方便核对上游源码提交时间。
 
@@ -20,8 +19,6 @@ Mediatek系列，包含JCG_Q30 NX30-PRO GL-MT3000 QIHOO_360T7 CETRON_CT3003 MI-R
 X64系列，包含X64、X86
 
 # 目录简要说明：
-
-Depends.txt——环境依赖列表
 
 Scripts——自定义脚本
 
