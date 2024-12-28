@@ -95,7 +95,7 @@ jobs:
         id: check-cache
         uses: actions/cache@main
         with:
-          key: ${{env.OWRT_TARGET}}-${{env.OWRT_NAME}}-${{env.$OWRT_VER}}
+          key: ${{env.OWRT_TARGET}}-${{env.OWRT_NAME}}-${{env.OWRT_VER}}
           path: |
             ./wrt/.ccache
             ./wrt/staging_dir/host*
