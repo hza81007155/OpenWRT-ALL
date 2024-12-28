@@ -97,15 +97,15 @@ jobs:
         with:
           key: ${{env.OWRT_TARGET}}-${{env.OWRT_NAME}}-${{env.OWRT_VER}}
           path: |
-            ./wrt/.ccache
-            ./wrt/staging_dir/host*
-            ./wrt/staging_dir/tool*
+            ./owrt/.ccache
+            ./owrt/staging_dir/host*
+            ./owrt/staging_dir/tool*
 
       - name: Update Caches
         run: |
           if ${{steps.check-cache.outputs.cache-hit == 'true'}}; then
-            sed -i 's/ $(tool.*\/stamp-compile)//g' ./wrt/Makefile
-            sed -i 's/ $(tool.*\/stamp-install)//g' ./wrt/Makefile
+            sed -i 's/ $(tool.*\/stamp-compile)//g' ./owrt/Makefile
+            sed -i 's/ $(tool.*\/stamp-install)//g' ./owrt/Makefile
 
             echo "toolchain skiped done!"
           else
