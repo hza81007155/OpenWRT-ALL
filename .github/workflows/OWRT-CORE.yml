@@ -164,16 +164,15 @@ jobs:
         run: |
           cd ./owrt && mkdir ./upload
 
-          find ./bin/targets/ -iregex ".*\(buildinfo\|json\|manifest\|sha256sums\|packages\)$" -type f -delete
+           find ./bin/targets/ -iregex ".*\(buildinfo\|json\|manifest\|sha256sums\|packages\)$" -exec rm -rf {} +
           cp -rf $(find ./bin/targets/ -type f -iname "*.*") ./upload/
           cp -rf ./.config ./upload/Config_"$OWRT_TARGET"_"$OWRT_SOURCE"_"$OWRT_DATE".txt
 
           cd ./upload
-
           $GITHUB_WORKSPACE/Scripts/Renames.sh
 
       - name: Release Firmware
-        uses: softprops/action-gh-release@master
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{env.OWRT_TARGET}}_${{env.OWRT_SOURCE}}_${{env.OWRT_DATE}}
           files: ./owrt/upload/*.*
