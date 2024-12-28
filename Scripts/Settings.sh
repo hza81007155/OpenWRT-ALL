@@ -7,7 +7,8 @@ if [ -z "$OWRT_THEME" ] || [ -z "$OWRT_IP" ] || [ -z "$OWRT_NAME" ] || [ -z "$OW
 fi
 
 # 删除冲突插件
-find ./feeds/luci/ -type d -regex ".*\(argon\|openclash\|lucky\).*" -exec rm -rf {} \;
+rm -rf $(find ./ ../feeds/luci/ ../feeds/packages/ -maxdepth 3 -type d \( -iname "*argon*" -o -iname "*openclash*" -o -iname "*lucky*" \) -prune)
+
 
 # 修改默认主题
 find ./feeds/luci/collections/ -type f -name "Makefile" -exec sed -i "s/luci-theme-bootstrap/luci-theme-$OWRT_THEME/g" {} \;
