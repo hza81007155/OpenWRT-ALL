@@ -73,9 +73,10 @@ jobs:
 
       - name: Initialization Values
         run: |
-          export OWRT_DATE=$(TZ=UTC-8 date +"%y.%m.%d_%H.%M.%S")
+          export OWRT_DATE=$(TZ=UTC+8 date +"%y.%m.%d_%H.%M.%S")
           export OWRT_SOURCE=$(basename $OWRT_URL)
           export OWRT_TYPE=$(sed -n '1s/#//p' $GITHUB_WORKSPACE/Config/$OWRT_TARGET.txt)
+          export OWRT_VER=$(TZ=UTC+8 date +"%y%m")
 
           echo "OWRT_SOURCE=$OWRT_SOURCE" >> $GITHUB_ENV
           echo "OWRT_TARGET=$OWRT_TARGET" >> $GITHUB_ENV
@@ -83,6 +84,7 @@ jobs:
           echo "OWRT_TYPE=$OWRT_TYPE" >> $GITHUB_ENV
           echo "OWRT_PW=$OWRT_PW" >> $GITHUB_ENV
           echo "OWRT_IP=$OWRT_IP" >> $GITHUB_ENV
+          echo "OWRT_VER=$OWRT_VER" >> $GITHUB_ENV
 
       - name: Clone OWRT Code
         run: |
@@ -93,7 +95,7 @@ jobs:
         id: check-cache
         uses: actions/cache@main
         with:
-          key: ${{env.WRT_TARGET}}-${{env.WRT_VER}}-${{env.WRT_HASH}}
+          key: ${{env.OWRT_TARGET}}-${{env.OWRT_NAME}}-${{env.$OWRT_VER}}
           path: |
             ./wrt/.ccache
             ./wrt/staging_dir/host*
@@ -107,7 +109,7 @@ jobs:
 
             echo "toolchain skiped done!"
           else
-            CACHE_LIST=$(gh cache list --key "$WRT_TARGET-$WRT_VER" | cut -f 1)
+            CACHE_LIST=$(gh cache list --key "$OWRT_TARGET-$OWRT_NAME-$OWRT_VER" | cut -f 1)
             for CACHE_KEY in $CACHE_LIST; do
                gh cache delete $CACHE_KEY
             done
