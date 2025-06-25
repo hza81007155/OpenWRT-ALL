@@ -2,7 +2,7 @@
 云编译OpenWRT固件
 
 LEDE源码：
-https://github.com/coolsnowwolf/lede
+https://github.com/hza81007155/lede
 
 IMMORTALWRT源码：
 https://github.com/immortalwrt/immortalwrt
