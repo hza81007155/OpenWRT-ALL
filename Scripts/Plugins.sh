@@ -11,6 +11,9 @@ git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luc
 # packages
 #git clone --depth=1 --single-branch https://github.com/kiddin9/openwrt-packages.git kiddin9
 
+# dockerman
+git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-dockerman.git
+
 # adguardHome
 git clone --depth=1 --single-branch https://github.com/rufengsuixing/luci-app-adguardhome.git
 
