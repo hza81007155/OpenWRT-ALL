@@ -10,7 +10,7 @@ fi
 rm -rf $(find ./ ../feeds/luci/ ../feeds/packages/ -maxdepth 3 -type d \( -iname "*argon*" -o -iname "*openclash*" -o -iname "*lucky*" \) -prune)
 
 # 修改默认主题
-find ./feeds/luci/collections/ -type f -name "Makefile" -exec sed -i "s/luci-theme-bootstrap/luci-theme-$OWRT_THEME/g" {} \;
+find ./feeds/luci/collections/ -type f -name "Makefile" -exec sed -i "s/luci-theme-bootstrap/luci-theme-argon/g" {} \;
 
 # 修改默认IP地址
 [ $DEFAULT_IP ] && sed -i '/n) ipad/s/".*"/"'"$OWRT_IP"'"/' package/base-files/files/bin/config_generate
