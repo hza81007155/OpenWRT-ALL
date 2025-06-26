@@ -14,6 +14,12 @@ git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luc
 # dockerman
 git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-dockerman.git
 
+# ddns-go
+git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-ddns-go.git
+
+# passwall
+git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwall.git
+
 # adguardHome
 git clone --depth=1 --single-branch https://github.com/rufengsuixing/luci-app-adguardhome.git
 
