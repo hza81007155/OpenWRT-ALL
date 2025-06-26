@@ -9,9 +9,6 @@ fi
 # 删除冲突插件
 rm -rf $(find ./ ../feeds/luci/ ../feeds/packages/ -maxdepth 3 -type d \( -iname "*argon*" -o -iname "*openclash*" -o -iname "*lucky*" \) -prune)
 
-# 设置luci版本为18.06
-sed -i '/luci/s/^#//; /luci.git/s/^/#/' feeds.conf.default
-
 # 修改默认主题
 find ./feeds/luci/collections/ -type f -name "Makefile" -exec sed -i "s/luci-theme-bootstrap/luci-theme-$OWRT_THEME/g" {} \;
 
