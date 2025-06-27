@@ -13,6 +13,7 @@ git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luc
 
 # 18.06 Argon theme
 git clone https://github.com/kenzok78/luci-theme-argone
+git clone https://github.com/kenzok78/luci-app-argone-config
 
 # dockerman
 git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-dockerman.git
