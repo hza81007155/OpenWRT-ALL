@@ -19,7 +19,7 @@ find ./feeds/luci/collections/ -type f -name "Makefile" -exec sed -i "s/luci-the
 cp -f $GITHUB_WORKSPACE/images/bg1.jpg feeds/luci/themes/luci-theme-argone/htdocs/luci-static/argon/img/bg1.jpg
 
 # 修改默认IP地址
-sed -i "s/192\.168\.[0-9]*\.[0-9]*/$OWRT_IP/g" ./package/base-files/luci2/bin/config_generate
+#sed -i "s/192\.168\.[0-9]*\.[0-9]*/$OWRT_IP/g" ./package/base-files/luci2/bin/config_generate
 
 # 修改默认主机名
 sed -i "s/hostname='.*'/hostname='$OWRT_NAME'/g" ./package/base-files/luci2/bin/config_generate
