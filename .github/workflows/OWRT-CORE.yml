@@ -26,6 +26,7 @@ on:
 
 env:
   GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+  FEEDS_CONF: feeds.conf.default
   OWRT_TARGET: ${{inputs.OWRT_TARGET}}
   OWRT_THEME: ${{inputs.OWRT_THEME}}
   OWRT_NAME: ${{inputs.OWRT_NAME}}
