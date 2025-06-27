@@ -7,7 +7,7 @@ if [ -z "$OWRT_THEME" ] || [ -z "$OWRT_IP" ] || [ -z "$OWRT_NAME" ] || [ -z "$OW
 fi
 
 # 设置luci版本为18.06
-sed -i '/luci/s/^#//; /luci.git/s/^/#/' feeds.conf.default
+#sed -i '/luci/s/^#//; /luci.git/s/^/#/' feeds.conf.default
 
 # 删除冲突插件
 rm -rf $(find ./ ../feeds/luci/ ../feeds/packages/ -maxdepth 3 -type d \( -iname "*argon*" -o -iname "*openclash*" -o -iname "*lucky*" \) -prune)
