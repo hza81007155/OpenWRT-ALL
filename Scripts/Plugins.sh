@@ -24,6 +24,9 @@ git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwal
 # adguardHome
 git clone --depth=1 --single-branch https://github.com/rufengsuixing/luci-app-adguardhome.git
 
+# upnp
+https://github.com/grandway2025/luci-app-upnp
+
 # lucky
 git clone --depth=1 --single-branch https://github.com/gdy666/luci-app-lucky.git
 
