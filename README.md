@@ -10,9 +10,9 @@ https://github.com/immortalwrt/immortalwrt
 # 固件简要说明：
 
 
-X86-64系列为 istoreos 风格，其他机型陆续适配中。。。
+X86-64系列： istoreos 风格，
 
-Rockchip系列，包含R4S R5C R5S R6C R6S R66S 
+Rockchip系列：istoreos 风格，包含：R4S R5C R5S R6C R6S R66S 
 
 Mediatek系列，包含JCG_Q30 NX30-PRO GL-MT3000 QIHOO_360T7 CETRON_CT3003 MI-ROUTER-WR30U REDMI-ROUTER-AX6000
 
