@@ -28,6 +28,11 @@ sed -i "s/hostname='.*'/hostname='$OWRT_NAME'/g" ./package/base-files/luci2/bin/
 sed -i "s/timezone='.*'/timezone='CST-8'/g" ./package/base-files/luci2/bin/config_generate
 sed -i "/timezone='.*'/a\\\t\t\set system.@system[-1].zonename='Asia/Shanghai'" ./package/base-files/luci2/bin/config_generate
 
+# 修改版本为编译日期
+date_version=$(date +"%y.%m.%d")
+orig_version=$(cat "package/lean/default-settings/files/zzz-default-settings" | grep DISTRIB_REVISION= | awk -F "'" '{print $2}')
+sed -i "s/${orig_version}/R${date_version} by Haiibo/g" package/lean/default-settings/files/zzz-default-settings
+
 # 根据源码来修改（仅当链接包含 "lede" 时）
 if [[ $OWRT_URL == *"lede"* ]]; then
     # 修改默认时间格式
