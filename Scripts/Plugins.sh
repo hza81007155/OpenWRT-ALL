@@ -1,8 +1,5 @@
 #!/bin/bash
 
-#Argon Theme
-#git clone --depth=1 --single-branch https://github.com/jerrykuku/luci-theme-argon.git
-#git clone --depth=1 --single-branch https://github.com/jerrykuku/luci-app-argon-config.git
 #Linkease
 git clone --depth=1 --single-branch https://github.com/linkease/istore.git
 git clone --depth=1 --single-branch https://github.com/linkease/nas-packages.git
@@ -11,9 +8,9 @@ git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luc
 # packages
 #git clone --depth=1 --single-branch https://github.com/kiddin9/openwrt-packages.git kiddin9
 
-# 18.06 Argon theme
-git clone https://github.com/kenzok78/luci-theme-argone
-git clone https://github.com/kenzok78/luci-app-argone-config
+# 18.06 Argone theme
+git clone https://github.com/hza81007155/luci-theme-argone
+git clone https://github.com/hza81007155/luci-app-argone-config
 
 # dockerman
 git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-dockerman.git
