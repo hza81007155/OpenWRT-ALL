@@ -8,6 +8,8 @@ fi
 
 # 设置luci版本为18.06
 #sed -i '/luci/s/^#//; /luci.git/s/^/#/' feeds.conf.default
+# 调整网口顺序
+sed -i "s,'eth1' 'eth0','eth0' 'eth1',g" target/linux/rockchip/armv8/base-files/etc/board.d/02_network
 
 # 删除冲突插件
 rm -rf $(find ./ ../feeds/luci/ ../feeds/packages/ -maxdepth 3 -type d \( -iname "*argon*" -o -iname "*openclash*" -o -iname "*lucky*" \) -prune)
