@@ -1,5 +1,5 @@
 #CI项目名
-name: Rockchip-Lede
+name: R6C-Lede
 
 on:
   #自动编译：每天早上4点
