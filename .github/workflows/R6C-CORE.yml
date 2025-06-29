@@ -147,7 +147,7 @@ jobs:
       - name: Custom Scripts
         run: |
           cd ./owrt
-          $GITHUB_WORKSPACE/Scripts/Settings.sh
+          $GITHUB_WORKSPACE/Scripts/Settings-r6c.sh
 
           cd ./package
           $GITHUB_WORKSPACE/Scripts/Plugins.sh
