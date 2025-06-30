@@ -18,8 +18,9 @@ git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-dockerm
 # ddns-go
 git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-ddns-go.git
 
-# passwall
+# passwall/passwall2
 git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwall.git
+git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwall2.git
 
 # adguardHome
 git clone --depth=1 --single-branch https://github.com/rufengsuixing/luci-app-adguardhome.git
