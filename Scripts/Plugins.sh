@@ -8,6 +8,9 @@ git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luc
 # packages
 #git clone --depth=1 --single-branch https://github.com/kiddin9/openwrt-packages.git kiddin9
 
+# R4S机型调整网口,wan/lan对调，以适配T4机型
+#sed -i "s,'eth1' 'eth0','eth0' 'eth1',g" target/linux/rockchip/armv8/base-files/etc/board.d/02_network
+
 # partexp 扩容分区
 git clone https://github.com/sirpdboy/luci-app-partexp.git package/luci-app-partexp
 
