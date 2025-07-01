@@ -10,9 +10,9 @@ https://github.com/immortalwrt/immortalwrt
 # 固件简要说明：
 
 
-X86-64系列： LEDE源码编译的固件为istoreos 风格，IMMORTALWRT源码编译的固件适配中。。。
+X86-64系列： LEDE源码编译的固件为istoreos 风格。
 
-Rockchip系列：包含：R4S R5S R6S ，LEDE源码编译的固件为istoreos 风格，IMMORTALWRT源码编译的固件适配中。。 
+Rockchip系列：包含：R4S R5S R6S ，LEDE源码编译的固件为istoreos 风格。 
 
 Mediatek系列，包含JCG_Q30 NX30-PRO GL-MT3000 QIHOO_360T7 CETRON_CT3003 MI-ROUTER-WR30U REDMI-ROUTER-AX6000
 
@@ -24,3 +24,8 @@ Scripts——自定义脚本
 Config——自定义配置
 
 workflows——自定义CI配置
+
+
+https://github.com/hza81007155/OpenWRT-ALL/blob/main/images/1.png
+
+https://github.com/hza81007155/OpenWRT-ALL/blob/main/images/2.png
