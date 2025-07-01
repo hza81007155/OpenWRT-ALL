@@ -26,6 +26,6 @@ Config——自定义配置
 workflows——自定义CI配置
 
 
-https://github.com/hza81007155/OpenWRT-ALL/blob/main/images/1.png
+[https://github.com/hza81007155/OpenWRT-ALL/blob/main/images/1.png](https://github.com/hza81007155/OpenWRT-ALL/blob/main/images/1.png)
 
 https://github.com/hza81007155/OpenWRT-ALL/blob/main/images/2.png
