@@ -29,6 +29,6 @@ workflows——自定义CI配置
 
 #### 概览
 
-https://github.com/hza81007155/OpenWRT-ALL/blob/main/images/1.webp
+[https://github.com/hza81007155/OpenWRT-ALL/blob/main/images/1.webp](https://github.com/hza81007155/OpenWRT-ALL/raw/refs/heads/main/images/1.webp)
 
 
