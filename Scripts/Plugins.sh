@@ -8,6 +8,9 @@ git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luc
 # packages
 #git clone --depth=1 --single-branch https://github.com/kiddin9/openwrt-packages.git kiddin9
 
+# partexp 扩容分区
+git clone https://github.com/sirpdboy/luci-app-partexp.git package/luci-app-partexp
+
 # 18.06 Argone theme
 git clone https://github.com/hza81007155/luci-theme-argone
 git clone https://github.com/hza81007155/luci-app-argone-config
