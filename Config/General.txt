@@ -25,7 +25,7 @@ CONFIG_PACKAGE_bind-libs=y
 CONFIG_PACKAGE_coreutils=y
 
 #增加插件
-CONFIG_PACKAGE_luci-app-luci-app-partexp
+# CONFIG_PACKAGE_luci-app-luci-app-partexp
 CONFIG_PACKAGE_luci-app-diskman=y
 CONFIG_PACKAGE_luci-app-turboacc=y
 CONFIG_PACKAGE_luci-app-autoreboot=y
