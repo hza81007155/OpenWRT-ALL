@@ -12,7 +12,7 @@ git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luc
 #sed -i "s,'eth1' 'eth0','eth0' 'eth1',g" target/linux/rockchip/armv8/base-files/etc/board.d/02_network
 
 # partexp 扩容分区
-git clone https://github.com/hza81007155/luci-app-partexp.git package/luci-app-partexp
+git clone https://github.com/hza81007155/luci-app-partexp
 
 # 18.06 Argone theme
 git clone https://github.com/hza81007155/luci-theme-argone
