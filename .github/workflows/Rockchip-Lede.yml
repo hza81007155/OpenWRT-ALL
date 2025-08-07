@@ -2,7 +2,7 @@
 name: Rockchip-Lede
 
 on:
-  #自动编译：每天早上4点
+  #自动编译：每周一(23:00) 执行编译
   schedule:
     - cron: 0 23 * * 1
   #手动编译
